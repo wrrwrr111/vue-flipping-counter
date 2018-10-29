@@ -40,7 +40,7 @@ var Main = {
       this.timer = setInterval(function(){
         let speed = Math.round(Math.random() * that.maxSpeed - that.maxSpeed/2);
         let temp = that.value + speed;
-        that.value = temp >= 0 ? temp : 0;
+        that.value = temp >= 100 ? temp : 100;
       },2000)
     },
     stop(){
