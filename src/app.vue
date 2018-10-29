@@ -59,9 +59,8 @@ import Vue from 'vue'
                     let arrLen = arr.length;
                     let counterLen = this.counterArray.length
                     this.counterArray.splice(arr.length)
-
                     this.numCounterStyle.fontSize =  (this.$refs.numCounter.offsetWidth / (arrLen +0.3)) + 'px';
-                    this.numStyle.width = (this.$refs.numCounter.offsetWidth / (arrLen+0.2)) + 'px';
+                    this.numStyle.width = (this.$refs.numCounter.offsetWidth / arrLen) + 'px';
                     arr.forEach((item,i)=>{
                         setTimeout(()=>{
                             that.$set(that.counterArray,i,'d'+ arr[i] || 0);

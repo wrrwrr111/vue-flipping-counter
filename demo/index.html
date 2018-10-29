@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>vue flipping counter demo</title>
+<script src="https://unpkg.com/vue@2.2.6"></script>
+<script src="../dist/vue-flipping-counter.js"></script>
+</head>
+<body>
+<div id="app">
+  <div>
+    value: <input type="number" v-model.number='value' name='value' />
+    <button @click="random">random</button>
+    <button @click="stop">stop</button>
+  </div>
+  <vue-flipping-counter :value="value" :style="style"></vue-flipping-counter>
+</div>
+<script>
+
+var Main = {
+  name:'test',
+  data() {
+    return {
+      value:0,
+      style:{
+        width:'200px'
+      },
+      timer:null,
+      maxSpeed:100,
+    }
+  },
+  mounted(){
+    this.value = 222;
+  },
+  methods:{
+    random(){
+      let that = this;
+      if(this.timer)
+        return;
+      this.timer = setInterval(function(){
+        let speed = Math.round(Math.random() * that.maxSpeed - that.maxSpeed/2);
+        let temp = that.value + speed;
+        that.value = temp >= 0 ? temp : 0;
+      },2000)
+    },
+    stop(){
+      clearInterval(this.timer)
+      this.timer = null;
+    }
+  }
+}
+var FC = Vue.extend(Main);
+new FC().$mount('#app')
+</script>
+</body>
+</html>

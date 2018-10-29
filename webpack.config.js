@@ -8,7 +8,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, './dist'),//输出路径，就是上步骤中新建的dist目录，
         publicPath: '/dist/',
-        filename: 'vue-flipping-counter.min.js',
+        filename: 'vue-flipping-counter.js',
         libraryTarget: 'umd',
         umdNamedDefine: true
     },
