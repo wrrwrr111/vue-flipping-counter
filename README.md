@@ -22,8 +22,8 @@ npm install vue-flipping-counter --save
 
 # todo list
 
--complete options
+- complete options
 
--optimize animation when number length changing
+- optimize animation when number length changing
 
--supportss letters
+- supportss letters
