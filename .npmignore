@@ -2,7 +2,9 @@
 *.md
 *.yml
 build/
+demo/
 node_modules/
 src/
 test/
 gulpfile.js
+webpack.config.js
