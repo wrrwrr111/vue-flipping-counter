@@ -9,3 +9,11 @@ https://codepen.io/vsync/pen/dlwgj
 # demo
 
 https://wrrwrr111.github.io/vue-flipping-counter/demo/index.html
+
+#todo list
+
+`complete options
+
+`optimize animation when number length changing
+
+`supportss letters
