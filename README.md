@@ -1,19 +1,29 @@
-# vue-flipping-counter
+# Vue-Flipping-Counter
 
-refers:
+flipping number counter component for Vue.
+
+# Refers
 
 https://blog.csdn.net/azrael___/article/details/80252078
 
 https://codepen.io/vsync/pen/dlwgj
 
-# demo
+# Demo
 
-https://wrrwrr111.github.io/vue-flipping-counter/demo/index.html
+[demo page](https://wrrwrr111.github.io/vue-flipping-counter/demo/index.html)
 
-#todo list
+# Use Setup
 
-`complete options
+### Install vue-flipping-counter
 
-`optimize animation when number length changing
+``` bash
+npm install vue-flipping-counter --save
+```
 
-`supportss letters
+# todo list
+
+-complete options
+
+-optimize animation when number length changing
+
+-supportss letters
